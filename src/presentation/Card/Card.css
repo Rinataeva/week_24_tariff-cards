@@ -1,0 +1,17 @@
+.card_1{
+    background-color: orange;
+}
+.card_2{
+    background-color: lightblue;
+}
+.card_3{
+    background-color: yellowgreen;
+}
+.card_4{
+    background-color: wheat;
+}
+.card_active{
+    width: 120%;
+    margin: auto;
+}
+
