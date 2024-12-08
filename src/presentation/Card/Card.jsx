@@ -8,7 +8,7 @@ export function Card(props) {
 // const buttonText = stateArray[0];
 // const setButtonText = stateArray[1];
 
-//это то же самое, что и
+
 
 
 
@@ -18,10 +18,8 @@ export function Card(props) {
     className += " card_active";
   }
 
-  //Обработчик клика
-  function onClick() {
-  onButtonClick(color);
-  }
+
+
 
 
   return (
@@ -31,7 +29,7 @@ export function Card(props) {
       <div>руб {price} / мес</div>
       <div>{speed}</div>
       <footer><h5>Объем включенного трафика не ограничен</h5></footer>
-      <button onClick={onClick}>{isActive ? "Выбрано" : "Выбрать"}</button>
+      <button onClick={onButtonClick}>{isActive ? "Выбрано" : "Выбрать"}</button>
     </div>
   );
 }

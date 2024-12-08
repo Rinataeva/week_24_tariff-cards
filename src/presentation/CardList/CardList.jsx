@@ -5,6 +5,7 @@ import "./CardList.css";
 export function CardList (){
 
     const [isActive, setIsActive] = useState(0); //дефолтное состояние ноль 
+    
     return (
         <div className="cardList">
         <Card 
@@ -12,28 +13,28 @@ export function CardList (){
         speed = "до 10 Мбит/сек"
         color="1" 
         isActive={isActive==="1"} 
-        onButtonClick = {setIsActive}
+        onButtonClick = {setIsActive.bind(null, "1")}
         />
         <Card 
         price="400" 
         color="2" 
         speed = "до 50 Мбит/сек"
         isActive={isActive==="2"} 
-        onButtonClick = {setIsActive}
+        onButtonClick = {setIsActive.bind(null, "2")}
         />
         <Card 
         price="550" 
         color="3" 
         speed = "до 100 Мбит/сек"
         isActive={isActive==="3" }
-        onButtonClick = {setIsActive}
+        onButtonClick = {setIsActive.bind(null, "3")}
         />
         <Card 
         price="1000" 
         color="4" 
         speed = "до 200 Мбит/сек"
         isActive={isActive==="4" } 
-        onButtonClick = {setIsActive}
+        onButtonClick = {setIsActive.bind(null, "4")}
         />
         </div>
       );    
